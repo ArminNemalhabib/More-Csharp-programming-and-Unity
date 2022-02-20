@@ -1,0 +1,58 @@
+using System;
+
+namespace Exercise2_course2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // setting up a menu and getting user's choice
+
+            Console.WriteLine("Menu: ");
+            Console.WriteLine("1- New Game");
+            Console.WriteLine("2- Load Game");
+            Console.WriteLine("3- Options");
+            Console.WriteLine("4- Quit");
+            int choice = int.Parse(Console.ReadLine());
+            
+            // using if statement
+
+            if (choice == 1 )
+            {
+                Console.WriteLine("Loading New Game...");
+            }
+            else if (choice == 2)
+            {
+                Console.WriteLine("Loading Your Last Save...");
+            }
+            else if (choice == 3)
+            {
+                Console.WriteLine("Loading Options...");
+            }
+            else if (choice == 4)
+            {
+                Console.WriteLine("Quiting The Game...");
+            }
+            else
+            {
+                Console.WriteLine("No Options Available");
+            }
+
+            // using switch statement
+            switch (choice)
+            {
+                case 1: Console.WriteLine("loading new game...");
+                    break;
+                case 2: Console.WriteLine("loading your last save...");
+                    break;
+                case 3: Console.WriteLine("loading options...");
+                    break;
+                case 4: Console.WriteLine("quiting the game...");
+                    break;
+                default: Console.WriteLine("no options available");
+                    break;
+            }
+
+        }
+    }
+}
