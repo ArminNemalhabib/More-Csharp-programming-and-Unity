@@ -1,0 +1,45 @@
+using System;
+
+namespace EXE8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //getting all even numbers from 0 to the 
+            // user's input
+            Console.Write("Type a random number: ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i);                
+                }
+            }
+        }
+    }
+}
+
+using System;
+
+namespace EXE8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //print asterisks specified by 
+            //the user random row width
+            Console.Write("Enter a width: ");
+            int w = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < w; i++)
+            {
+                    Console.Write("*");
+            }
+        }
+    }
+}
+
